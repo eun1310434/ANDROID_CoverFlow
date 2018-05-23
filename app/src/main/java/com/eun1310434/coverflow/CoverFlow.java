@@ -9,31 +9,21 @@ import android.view.animation.Transformation;
 import android.widget.Gallery;
 import android.widget.ImageView;
 
-/**
- * 갤러리를 상속하여 커버플로우 뷰 정의
- * 
- * @author Mike
- *
- */
+//갤러리를 상속하여 커버플로우 뷰 정의
 public class CoverFlow extends Gallery {
 
 	private Camera camera = new Camera();
 
-	/**
-	 * 회전 각도
-	 */
+	//회전 각도
 	public static int maxRotationAngle = 55;
 
-	/**
-	 * 최대 확대 수준
-	 */
+	//최대 확대 수준
 	public static int maxZoom = -60;
 
 	private int centerPoint;
 
 	/**
 	 * 생성자
-	 *
 	 * @param context
 	 */
 	public CoverFlow(Context context) {
@@ -44,7 +34,6 @@ public class CoverFlow extends Gallery {
 
 	/**
 	 * 생성자
-	 *
 	 * @param context
 	 * @param attrs
 	 */
@@ -56,7 +45,6 @@ public class CoverFlow extends Gallery {
 
 	/**
 	 * 생성자
-	 *
 	 * @param context
 	 * @param attrs
 	 * @param defStyle
